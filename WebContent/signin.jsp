@@ -1,4 +1,16 @@
-  <style>
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+  
+    <!-- Bootstrap Core CSS -->
+    <link href="/IEEEGen/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/IEEEGen/static/css/login.css" rel="stylesheet">
+    
+      <style>
   @import "bourbon";
 
 body {
@@ -52,25 +64,16 @@ body {
 }
   </style>
   
-  <html>
-  <head>
-  
-    <!-- Bootstrap Core CSS -->
-    <link href="/IEEEGen/static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/IEEEGen/static/css/login.css" rel="stylesheet">
-  
   
   </head>
   <body>
   
   <div class="wrapper">
-    <form class="form-signin">       
+    <form class="form-signin" action="/IEEEGen/login" method="post">       
       <h2 class="form-signin-heading">Please login</h2>
-      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-      <label class="checkbox">
+      <input type="text" class="form-control" name="uname" placeholder="Email Address" required="" autofocus="" />
+      <input type="password" class="form-control" name="pwd" placeholder="Password" required=""/>      
+      <label class="checkbox" display="none">
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
       </label>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   

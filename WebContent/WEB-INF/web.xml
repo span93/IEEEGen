@@ -9,4 +9,34 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>  
+    <servlet-class>com.ieeegen.web.auth.LoginServlet</servlet-class>  
+  </servlet>
+ <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>  
+    <url-pattern>/login</url-pattern>  
+ </servlet-mapping>
+ 
+ <servlet>
+    <servlet-name>signin</servlet-name>
+    <jsp-file>/signin.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+ </servlet>
+
+	<servlet-mapping>
+    <servlet-name>signin</servlet-name>
+    <url-pattern>/signin</url-pattern> <!-- Any URL you want here -->
+	</servlet-mapping>
+
+ <servlet>
+    <servlet-name>editor</servlet-name>
+    <jsp-file>/editor.jsp</jsp-file> <!-- Your JSP. Must begin with '/' -->
+ </servlet>
+
+	<servlet-mapping>
+    <servlet-name>editor</servlet-name>
+    <url-pattern>/editor</url-pattern> <!-- Any URL you want here -->
+	</servlet-mapping>
+
 </web-app>
